@@ -2,23 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://xkyzi.moe/about/index.html</loc>
-    
-    <lastmod>2025-03-23T09:43:43.193Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://xkyzi.moe/posts/hello-world-1/</loc>
-    
-    <lastmod>2025-03-23T09:38:33.660Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://xkyzi.moe/posts/hello-world/</loc>
     
-    <lastmod>2025-03-23T09:36:30.991Z</lastmod>
+    <lastmod>2025-03-23T14:38:43.334Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://xkyzi.moe/posts/vue3-ts-xun-fei-xing-huo-ren-zhi-da-mo-xing-da-jian-demo/</loc>
+    
+    <lastmod>2025-03-23T14:38:38.979Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://xkyzi.moe/about/index.html</loc>
+    
+    <lastmod>2025-03-23T14:36:51.838Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://xkyzi.moe/posts/ceshi/</loc>
+    
+    <lastmod>2025-03-23T09:38:33.660Z</lastmod>
     
   </url>
   
