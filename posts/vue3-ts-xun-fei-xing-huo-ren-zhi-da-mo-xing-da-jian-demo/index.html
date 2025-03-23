@@ -19,16 +19,16 @@
   
     <meta name="keywords" content="TypeScript, Vue3, 讯飞星火大模型API" />
   
-  <meta name="description" content="前言本项目主要采用 Vue3 + TypeScript + Vite 构建 项目主要依赖：Element-Plus + mitt + Scss + base-64 + crypto-js 介绍本项目仅供学习如何使用讯飞星火认知大模型，进行简单的 Web 端页面搭建及基本使用，该 demo 项目具备基本的聊天对话功能，可通过左侧选择不同的助手在右侧窗口进行对话，可供实际开发参考使用。本身这部分内容是">
+  <meta name="description" content="前言本项目主要采用 Vue3 + TypeScript + Vite 构建 项目主要依赖：Element-Plus + mitt + Scss + base-64 + crypto-js 介绍  本项目仅供学习如何使用讯飞星火认知大模型，进行简单的 Web 端页面搭建及基本使用，该 demo 项目具备基本的聊天对话功能，可通过左侧选择不同的助手在右侧窗口进行对话，可供实际开发参考使用。本身这部分内">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[Vue3+TS]讯飞星火认知大模型搭建demo">
 <meta property="og:url" content="https://xkyzi.moe/posts/vue3-ts-xun-fei-xing-huo-ren-zhi-da-mo-xing-da-jian-demo/index.html">
 <meta property="og:site_name" content="xkYZI &#39;s Blog">
-<meta property="og:description" content="前言本项目主要采用 Vue3 + TypeScript + Vite 构建 项目主要依赖：Element-Plus + mitt + Scss + base-64 + crypto-js 介绍本项目仅供学习如何使用讯飞星火认知大模型，进行简单的 Web 端页面搭建及基本使用，该 demo 项目具备基本的聊天对话功能，可通过左侧选择不同的助手在右侧窗口进行对话，可供实际开发参考使用。本身这部分内容是">
+<meta property="og:description" content="前言本项目主要采用 Vue3 + TypeScript + Vite 构建 项目主要依赖：Element-Plus + mitt + Scss + base-64 + crypto-js 介绍  本项目仅供学习如何使用讯飞星火认知大模型，进行简单的 Web 端页面搭建及基本使用，该 demo 项目具备基本的聊天对话功能，可通过左侧选择不同的助手在右侧窗口进行对话，可供实际开发参考使用。本身这部分内">
 <meta property="og:locale">
 <meta property="og:image" content="https://xkyzi.moe/posts/vue3-ts-xun-fei-xing-huo-ren-zhi-da-mo-xing-da-jian-demo/spark-demo.png">
 <meta property="article:published_time" content="2025-03-23T14:34:57.000Z">
-<meta property="article:modified_time" content="2025-03-23T14:38:38.979Z">
+<meta property="article:modified_time" content="2025-03-23T15:51:54.346Z">
 <meta property="article:author" content="xkYZI">
 <meta property="article:tag" content="TypeScript">
 <meta property="article:tag" content="Vue3">
@@ -249,7 +249,7 @@
             <hr />
             <div itemprop="articleBody"><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p><strong>本项目主要采用<font color="#956FE7"> Vue3 + TypeScript + Vite </font>构建</strong></p>
 <p><strong>项目主要依赖：<font color="#4DA8EE">Element-Plus + mitt + Scss + base-64 + crypto-js</font></strong></p>
-<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>本项目仅供学习如何使用讯飞星火认知大模型，进行简单的 Web 端页面搭建及基本使用，该 demo 项目具备基本的聊天对话功能，可通过左侧选择不同的助手在右侧窗口进行对话，可供实际开发参考使用。本身这部分内容是在我个人的毕业设计中进行了使用，鉴于有部分朋友向我索要 AI 部分的代码，故在此分享。</p>
+<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>  本项目仅供学习如何使用讯飞星火认知大模型，进行简单的 Web 端页面搭建及基本使用，该 demo 项目具备基本的聊天对话功能，可通过左侧选择不同的助手在右侧窗口进行对话，可供实际开发参考使用。本身这部分内容是在我个人的毕业设计中进行了使用，鉴于有部分朋友向我索要 AI 部分的代码，故在此分享。</p>
 <h1 id="项目链接"><a href="#项目链接" class="headerlink" title="项目链接"></a>项目链接</h1><p><strong>Github 仓库地址：<a target="_blank" rel="noopener" href="https://github.com/xkYZI/SparkDemo">GitHub - xkYZI/SparkDemo</a></strong></p>
 <h1 id="主要代码"><a href="#主要代码" class="headerlink" title="主要代码"></a>主要代码</h1><h2 id="1、路径鉴权"><a href="#1、路径鉴权" class="headerlink" title="1、路径鉴权"></a>1、路径鉴权</h2><figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> base64 <span class="keyword">from</span> <span class="string">"base-64"</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="title class_">CryptoJs</span> <span class="keyword">from</span> <span class="string">"crypto-js"</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//这里是讯飞星火大模型工作台的个人信息</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> <span class="variable constant_">APPID</span> = <span class="string">"你的APPID"</span>;</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> <span class="title class_">APIKey</span> = <span class="string">"你的APIKey"</span>;</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> <span class="title class_">APISecret</span> = <span class="string">"你的APISecret"</span>;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 大模型版本对照表</span></span><br><span class="line"><span class="comment"> * 官方文档参考：https://www.xfyun.cn/doc/spark/Web.html#_1-%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E</span></span><br><span class="line"><span class="comment"> *  Spark4.0 Ultra 请求地址：     domain：4.0Ultra      version：v4.0/chat</span></span><br><span class="line"><span class="comment"> *  Spark Max 请求地址：          domain：generalv3.5   version：v3.5/chat</span></span><br><span class="line"><span class="comment"> *  Spark Pro-128K 请求地址：     domain：pro-128k      version：chat/pro-128k</span></span><br><span class="line"><span class="comment"> *  Spark Pro 请求地址：          domain：generalv3     version：v3.1/chat</span></span><br><span class="line"><span class="comment"> *  Spark V2.0 请求地址：         domain：generalv2     version：v2.1/chat</span></span><br><span class="line"><span class="comment"> *  Spark Lite请求地址：          domain：general       version：v1.1/chat</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> domain = <span class="string">"generalv3.5"</span></span><br><span class="line"><span class="keyword">const</span> version = <span class="string">"v3.5/chat"</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//获取鉴权url地址</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> <span class="title function_">getWebsocketUrl</span> = (<span class="params"></span>) =&gt; {</span><br><span class="line">    <span class="comment">//获取鉴权地址</span></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Promise</span>(<span class="function">(<span class="params">resolve</span>) =&gt;</span> {</span><br><span class="line">        <span class="keyword">let</span> url = <span class="string">"wss://spark-api.xf-yun.com/"</span> + version;</span><br><span class="line">        <span class="keyword">let</span> host = <span class="string">"spark-api.xf-yun.com"</span>;</span><br><span class="line">        <span class="keyword">let</span> apiKeyName = <span class="string">"api_key"</span>;</span><br><span class="line">        <span class="keyword">let</span> date = <span class="keyword">new</span> <span class="title class_">Date</span>().<span class="title function_">toUTCString</span>();</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">"鉴权url地址"</span>, date);</span><br><span class="line">        <span class="keyword">let</span> algorithm = <span class="string">"hmac-sha256"</span>;</span><br><span class="line">        <span class="keyword">let</span> headers = <span class="string">"host date request-line"</span></span><br><span class="line">        <span class="keyword">let</span> signatureOrigin = <span class="string">`host: <span class="subst">${host}</span>\ndate: <span class="subst">${date}</span>\nGET /`</span> + version + <span class="string">` HTTP/1.1`</span>;</span><br><span class="line">        <span class="keyword">let</span> signatureSha = <span class="title class_">CryptoJs</span>.<span class="title class_">HmacSHA256</span>(</span><br><span class="line">            signatureOrigin,</span><br><span class="line">            <span class="title class_">APISecret</span></span><br><span class="line">        );</span><br><span class="line">        <span class="keyword">let</span> signature = <span class="title class_">CryptoJs</span>.<span class="property">enc</span>.<span class="property">Base64</span>.<span class="title function_">stringify</span>(signatureSha);</span><br><span class="line">        <span class="keyword">let</span> authorizationOrigin = <span class="string">`<span class="subst">${apiKeyName}</span>="<span class="subst">${APIKey}</span>", algorithm="<span class="subst">${algorithm}</span>", headers="<span class="subst">${headers}</span>", signature="<span class="subst">${signature}</span>"`</span>;</span><br><span class="line">        <span class="keyword">let</span> authorization = base64.<span class="title function_">encode</span>(authorizationOrigin);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//将空格编码</span></span><br><span class="line">        url = <span class="string">`<span class="subst">${url}</span>?authorization=<span class="subst">${authorization}</span>&amp;date=<span class="subst">${<span class="built_in">encodeURI</span>(</span></span></span><br><span class="line"><span class="subst"><span class="string">            date</span></span></span><br><span class="line"><span class="subst"><span class="string">        )}</span>&amp;host=<span class="subst">${host}</span>`</span>;</span><br><span class="line"></span><br><span class="line">        <span class="title function_">resolve</span>(url);</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">"鉴权url地址2"</span>, url);</span><br><span class="line">    });</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 
@@ -258,7 +258,7 @@
 <h2 id="3、限制历史对话长度"><a href="#3、限制历史对话长度" class="headerlink" title="3、限制历史对话长度"></a>3、限制历史对话长度</h2><figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//判断历史纪录的长度，如果太长删去前面的一些</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">canAddHistory</span>(<span class="params"></span>) {</span><br><span class="line">  <span class="keyword">let</span> history_length = <span class="number">0</span>;</span><br><span class="line">  historyList.<span class="property">value</span>.<span class="title function_">forEach</span>(<span class="function">(<span class="params">item</span>) =&gt;</span> {</span><br><span class="line">    history_length += item.<span class="property">content</span>.<span class="property">length</span>;</span><br><span class="line">  });</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">"当前长度："</span> + history_length);</span><br><span class="line">  <span class="keyword">if</span> (history_length &gt; <span class="number">10000</span>) {</span><br><span class="line">    <span class="comment">//移除五个元素</span></span><br><span class="line">    historyList.<span class="property">value</span>.<span class="title function_">splice</span>(<span class="number">0</span>, <span class="number">5</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">  }</span><br><span class="line">  <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 
 <h2 id="4、页面样例"><a href="#4、页面样例" class="headerlink" title="4、页面样例"></a>4、页面样例</h2><p><img src="/posts/vue3-ts-xun-fei-xing-huo-ren-zhi-da-mo-xing-da-jian-demo/spark-demo.png" alt="spark-demo"></p>
-<h1 id="运行方式"><a href="#运行方式" class="headerlink" title="运行方式"></a>运行方式</h1><p>1、从 GitHub 项目链接下载 <strong>**<a target="_blank" rel="noopener" href="https://github.com/xkYZI/SparkDemo">SparkDemo v1.0</a>** 。</strong></p>
+<h1 id="运行方式"><a href="#运行方式" class="headerlink" title="运行方式"></a>运行方式</h1><p>1、从 GitHub 项目链接下载 <strong><a target="_blank" rel="noopener" href="https://github.com/xkYZI/SparkDemo">SparkDemo v1.0</a> 。</strong></p>
 <p>2、在 vscode 或其他编译器中打开本项目。</p>
 <p>3、新建/打开终端。</p>
 <p>4、<strong>首次启动</strong> 需加载项目所需依赖。</p>
@@ -286,7 +286,7 @@
                     <a class="tag-none-link" href="/tags/TypeScript/" rel="tag">TypeScript</a>, <a class="tag-none-link" href="/tags/Vue3/" rel="tag">Vue3</a>, <a class="tag-none-link" href="/tags/%E8%AE%AF%E9%A3%9E%E6%98%9F%E7%81%AB%E5%A4%A7%E6%A8%A1%E5%9E%8BAPI/" rel="tag">讯飞星火大模型API</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2025-03-23T14:38:38.979Z" itemprop="dateModified">最后编辑：2025-03-23</time>
+                    <time datetime="2025-03-23T15:51:54.346Z" itemprop="dateModified">最后编辑：2025-03-23</time>
                 </div>
             </div>
         </footer>
@@ -295,7 +295,7 @@
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" hello world" href="/posts/ceshi/"><i class="fa fa-angle-left"></i> 上一篇</a>
+                <a title=" Welcome to my blog" href="/posts/hello-world/"><i class="fa fa-angle-left"></i> 上一篇</a>
             </div>
             
             
@@ -335,7 +335,7 @@
                 文章
             </span>
             <span class="count">
-                3
+                2
             </span>
         </a>
         <a class="meta-item" href="/categories/">
@@ -343,7 +343,7 @@
                 分类
             </span>
             <span class="count">
-                3
+                2
             </span>
         </a>
         <a class="meta-item" href="/tags/">
@@ -351,7 +351,7 @@
                 标签
             </span>
             <span class="count">
-                6
+                4
             </span>
         </a>
     </div>
@@ -374,7 +374,7 @@
                 
   <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
     <h4 class="widget-title"><i class="fa fa-folder"></i>分类列表</h4>
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%85%A8%E6%96%B0%E4%BD%93%E9%AA%8C/">全新体验</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/">技术分享</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B5%8B%E8%AF%95/">测试</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%85%A8%E6%96%B0%E4%BD%93%E9%AA%8C/">全新体验</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/">技术分享</a><span class="category-list-count">1</span></li></ul>
   </aside>
 
 
@@ -383,7 +383,7 @@
   <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
     <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
       <div class="tag-clouds">
-        <a href="/tags/TypeScript/" style="font-size: 0.6em;">TypeScript</a> <a href="/tags/Vue3/" style="font-size: 0.6em;">Vue3</a> <a href="/tags/hello/" style="font-size: 0.6em;">hello</a> <a href="/tags/world/" style="font-size: 0.6em;">world</a> <a href="/tags/%E6%AC%A2%E8%BF%8E/" style="font-size: 0.6em;">欢迎</a> <a href="/tags/%E8%AE%AF%E9%A3%9E%E6%98%9F%E7%81%AB%E5%A4%A7%E6%A8%A1%E5%9E%8BAPI/" style="font-size: 0.6em;">讯飞星火大模型API</a>
+        <a href="/tags/TypeScript/" style="font-size: 0.6em;">TypeScript</a> <a href="/tags/Vue3/" style="font-size: 0.6em;">Vue3</a> <a href="/tags/%E6%AC%A2%E8%BF%8E/" style="font-size: 0.6em;">欢迎</a> <a href="/tags/%E8%AE%AF%E9%A3%9E%E6%98%9F%E7%81%AB%E5%A4%A7%E6%A8%A1%E5%9E%8BAPI/" style="font-size: 0.6em;">讯飞星火大模型API</a>
       </div>
   </aside>
 
@@ -398,12 +398,6 @@
           
           
             <a class="list-group-item" href="/posts/vue3-ts-xun-fei-xing-huo-ren-zhi-da-mo-xing-da-jian-demo/"><i class="fa fa-book"></i> [Vue3+TS]讯飞星火认知大模型搭建demo</a>
-            
-          
-        
-          
-          
-            <a class="list-group-item" href="/posts/ceshi/"><i class="fa fa-book"></i> hello world</a>
             
           
         
