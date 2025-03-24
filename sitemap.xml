@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://xkyzi.moe/posts/quan-xin-ti-yan/welcome/</loc>
+    
+    <lastmod>2025-03-24T12:13:17.382Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://xkyzi.moe/posts/ji-zhu-fen-xiang/vue3-ts-xun-fei-xing-huo-ren-zhi-da-mo-xing-dui-jie-demo/</loc>
     
     <lastmod>2025-03-24T12:07:25.595Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>https://xkyzi.moe/posts/ji-zhu-fen-xiang/vue3-ts-guan-yu-deepseek-mo-xing-dui-jie-shi-li/</loc>
     
     <lastmod>2025-03-24T12:07:21.828Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://xkyzi.moe/posts/quan-xin-ti-yan/hello-world/</loc>
-    
-    <lastmod>2025-03-24T06:30:58.023Z</lastmod>
     
   </url>
   

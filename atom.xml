@@ -74,12 +74,12 @@
   
   <entry>
     <title>Welcome to my blog</title>
-    <link href="https://xkyzi.moe/posts/quan-xin-ti-yan/hello-world/"/>
-    <id>https://xkyzi.moe/posts/quan-xin-ti-yan/hello-world/</id>
+    <link href="https://xkyzi.moe/posts/quan-xin-ti-yan/welcome/"/>
+    <id>https://xkyzi.moe/posts/quan-xin-ti-yan/welcome/</id>
     <published>2020-05-06T09:03:12.000Z</published>
-    <updated>2025-03-24T06:30:58.023Z</updated>
+    <updated>2025-03-24T12:13:17.382Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>欢迎使用 <code>Kratos : Rebirth</code> 这个我们精心打造的 Hexo 主题！希望能在接下来的旅途中与您相伴，共同创造出更多难以忘怀的美好体验。</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>  欢迎！杂七杂八的东西我可能都会放在上面，一般我会记录一些自己的日常或者分享一些东西。</p>]]></content>
     
     
       
